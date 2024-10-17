@@ -8,11 +8,12 @@ import com.NextTechGrCse11.learningpath.model.UserInput;
 @Service
 public class AIService {
 	
-	private static final String AI_MODEL_URL = "http://localhost:5000/generate-learning-path";
-
-    public String getLearningPath(UserInput userInput) {
+	public String getLearningPath(UserInput userInput) {
         RestTemplate restTemplate = new RestTemplate();
-        return restTemplate.postForObject(AI_MODEL_URL, userInput, String.class);
+        String flaskUrl = "http://localhost:5000/generate-learning-path";
+        // Make a POST request to Flask with the user's input
+        String learningPath = restTemplate.postForObject(flaskUrl, userInput, String.class);
+        return learningPath;
     }
 
 }

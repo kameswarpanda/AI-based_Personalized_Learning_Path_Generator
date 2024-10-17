@@ -1,0 +1,29 @@
+body {
+  background-color: #f8f9fa; /* Light background color */
+}
+.container {
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px; /* Padding around the container */
+  margin-top: 50px; /* Spacing from the top */
+}
+h2 {
+  color: #007bff; /* Primary color for the title */
+  margin-bottom: 20px; /* Space below the title */
+}
+#learningPathResult {
+  margin-top: 30px; /* Space above the result area */
+  padding: 15px; /* Padding inside the result area */
+  background-color: #e9ecef; /* Light grey background */
+  border-left: 5px solid #007bff; /* Blue left border */
+  border-radius: 5px; /* Rounded corners for the result area */
+}
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  border: none; /* Remove border */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
