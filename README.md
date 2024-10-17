@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is an AI-based application designed to generate personalized learning paths based on user input, including skills, interests, and educational background. The application consists of a front-end interface built with HTML and Bootstrap, and a back-end service developed using Spring Boot that communicates with the OpenAI API to generate recommendations.
+This project is an AI-based application designed to generate personalized learning paths based on user input, including skills, interests, and educational background. The application consists of a front-end interface built with HTML and Bootstrap, and a back-end service developed using Spring Boot that communicates with the AI_Model to generate recommendations.
 
 ## Features
 
@@ -16,7 +16,7 @@ Before you begin, ensure you have met the following requirements:
 
 - **Java Development Kit (JDK)** installed (version 11 or above).
 - **Maven** for managing Java dependencies.
-- **Node.js** (optional, if you wish to use a local server for the frontend).
+- **Pthon or releted library** for generating recomendation.
 
 ## Getting Started
 
@@ -27,7 +27,7 @@ Follow these steps to run the application on your local machine:
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-
+```
 
 ### 2. Run the Frontend
 
@@ -39,7 +39,7 @@ cd your-repo-name
 - Navigate to the Spring Boot project directory.
 
     ```bash
-    cd ai_model
+    cd project_name
     ```
 
 - Build and run the Spring Boot application using Maven:
@@ -49,8 +49,25 @@ cd your-repo-name
     mvn spring-boot:run
     ```
 
-- The Spring Boot application will start on `http://localhost:5000`.
-### 4. Test the Application
+- The Spring Boot application will start on `http://localhost:8080`.
+- 
+### 3. Set Up the AI_model Application
+
+- Navigate to the Ai_model project directory.
+
+    ```bash
+    cd ai_model_name
+    ```
+
+- Build and run the Ai model application:
+
+    ```bash
+    python app.py
+    ```
+
+- The Ai_model application will start on `http://localhost:5000`.
+
+### 5. Test the Application
 
 - Open your web browser and go to the frontend URL where `index.html` is being served.
 - Fill in the form with your skills, interests, and educational background.
@@ -58,14 +75,7 @@ cd your-repo-name
 
 ### Note
 
-- Ensure the Spring Boot application is running before submitting the form from the frontend.
+- Ensure the Spring Boot application and Ai_model are running before submitting the form from the frontend.
 - If you encounter any issues, check the console for error messages and ensure all components are running properly.
 
-### License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-### Acknowledgments
-
-- [OpenAI](https://openai.com/) for providing the API.
-- [Bootstrap](https://getbootstrap.com/) for the front-end framework.
